@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import to_doback from "../assets/to-do-back.svg";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
 
 const HomePage = () => {
   return (
     <Wrapper>
-      <div className='logo'>
+      {/* <div className='logo'>
         <img src={logo} alt='' />
-      </div>
+      </div> */}
       <h1 className='title-home'>Welcome to Your To-Do App</h1>
       <p className='text'>
         Manage your tasks efficiently with our easy to use to-do app.
