@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import to_doback from "../assets/to-do-back.svg";
-// import logo1 from "../assets/logo.png";
+import logo1 from "../assets/logoSvg.svg";
 
 const HomePage = () => {
   return (
     <Wrapper>
-      {/* <div className='logo'>
+      <div className='logo'>
         <img src={logo1} alt='' />
-      </div> */}
+      </div>
       <h1 className='title-home'>Welcome to Your To-Do App</h1>
       <p className='text'>
         Manage your tasks efficiently with our easy to use to-do app.
@@ -32,6 +32,10 @@ const Wrapper = styled.section`
     transform: translate(-50%, -50%);
     left: 5%;
     width: 150px;
+  }
+  .logo img {
+    background-color: transparent;
+    color: #b33beb;
   }
   .title-home {
     font-size: clamp(45px, 8vw, 70px);
