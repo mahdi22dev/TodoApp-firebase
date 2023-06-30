@@ -88,8 +88,8 @@ const User = ({ setBackground }) => {
         "https://api.unsplash.com/photos/random?client_id=IGpefcWTr2vof55kobWMmociVczOx_Jlp06G_2oXEfE";
       const response = await fetch(url);
       const background = await response.json();
-      setBackground(background.urls.regular);
       console.log(background);
+      // setBackground(background.urls.regular);
     } catch (error) {
       console.log(error.message);
     }
