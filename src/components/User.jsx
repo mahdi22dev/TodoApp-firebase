@@ -76,7 +76,7 @@ const User = ({ setBackground }) => {
   const singIn = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in
+        UserLocalStorageAdd();
       })
       .catch((error) => {
         setData([]);
